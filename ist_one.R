@@ -68,9 +68,27 @@ mean(y,na.rm = TRUE)
 mon<-x$Month 
 Tem<-x$Temp
 z<-x[x[,"Month"] == 6,]#select a particular coloumn from table during condition
+colMeans(z[4], na.rm = TRUE)
+z<-subset(x,Month == 5)
+max(z[1],na.rm = TRUE)
+subset(x[1:2,])
+x<-1:4
+y<-2:3
+z<-x+y
+class(z)
+x <- c(1,3, 5) 
+y <- c(3, 2, 10)
+rbind(x, y)
+y<-subset(x,Ozone >31 & Temp >90)
+colMeans(y[2],na.rm = TRUE)
+x <- 1:4 
+y <- 2
+z<-x+y
+class(z)
 z
-y=z[4]
-y
-mean(z[4])
-m<-complete.cases(mon,Tem)
-m
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x>10]==4
+x[x==4]>10
+install.packages("swirl")
+packageVersion("swirl")
+library("swirl")
