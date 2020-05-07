@@ -1,0 +1,6 @@
+install.packages("swirl")
+packageVersion("swirl")
+library("swirl")
+ls()
+rm(list = ls())
+info()
